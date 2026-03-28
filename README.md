@@ -4,6 +4,8 @@ Proof-of-concept simulation for **inter-organizational trust-based sharing** of 
 
 - Hexmoor, H., Wilson, S., & Bhattaram, S. (2006). [*A theoretical inter-organizational trust-based security model*](https://doi.org/10.1017/S0269888906000932). *The Knowledge Engineering Review*, 21(2), 127–161.
 
+Longer narrative on the model, classified threat intelligence, and this simulation: [blog-classified-threat-intel-and-iotbsm.md](https://gist.github.com/sethlwilson/2b2058ef3d1a75f4c5356cf2a098fea3).
+
 The project models three agencies exchanging intelligence through boundary spanners, tracks trust evolution, applies trust policy models after breaches, and generates a dashboard image per run.
 
 ## Sample dashboard
@@ -29,6 +31,7 @@ The project models three agencies exchanging intelligence through boundary spann
 - `llm_interface.py` - Mock LLM assessor used by boundary spanners.
 - `visualization.py` - Dashboard generation (matplotlib).
 - `experiment_parameters.md` - Suggested experiment matrix.
+- `docs/blog-classified-threat-intel-and-iotbsm.md` - Blog-style article on IOTBSM and classified CTI.
 
 ## Requirements
 
