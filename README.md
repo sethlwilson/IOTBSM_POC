@@ -2,7 +2,7 @@
 
 Proof-of-concept simulation for **inter-organizational trust-based sharing** of classified threat intelligence, based on:
 
-- Hexmoor, H., Wilson, S., & Bhattaram, S. (2006), *A theoretical inter-organizational trust-based security model*, The Knowledge Engineering Review, 21(2), 127-161.
+- Hexmoor, H., Wilson, S., & Bhattaram, S. (2006). [*A theoretical inter-organizational trust-based security model*](https://doi.org/10.1017/S0269888906000932). *The Knowledge Engineering Review*, 21(2), 127–161.
 
 The project models three agencies exchanging intelligence through boundary spanners, tracks trust evolution, applies trust policy models after breaches, and generates a dashboard image per run.
 
