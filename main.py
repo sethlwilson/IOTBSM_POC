@@ -1,9 +1,9 @@
 """
 main.py
-IEOTBSM Proof of Concept — Entry Point
+IOTBSM Proof of Concept — Entry Point
 
 Classified Threat Intelligence Sharing Simulation
-Based on the Inter-Organizational Trust-Based Security Model (IEOTBSM)
+Based on the Inter-Organizational Trust-Based Security Model (IOTBSM)
 
 Citation:
   Hexmoor, H., Wilson, S., & Bhattaram, S. (2006).
@@ -22,14 +22,14 @@ import os
 # Ensure project root is in path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from simulation import IEOTBSMSimulation
+from simulation import IOTBSMSimulation
 from visualization import generate_dashboard
 from trust_policy import TPMType
 
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="IEOTBSM Classified Threat Intel Sharing Simulation"
+        description="IOTBSM Classified Threat Intel Sharing Simulation"
     )
     parser.add_argument("--cycles", type=int, default=30,
                         help="Number of simulation cycles (default: 30)")
@@ -45,7 +45,7 @@ def parse_args():
     parser.add_argument("--alpha", type=float, default=0.6,
                         help="IOT weight α in Eq. 7 (default: 0.6)")
     parser.add_argument("--output", type=str,
-                        default="./ieotbsm_dashboard.png",
+                        default="./iotbsm_dashboard.png",
                         help="Output path for dashboard image")
     return parser.parse_args()
 
@@ -61,7 +61,7 @@ def main():
     tpm_type = tpm_map[args.tpm]
 
     print("\n" + "="*60)
-    print("  IEOTBSM — Inter-Organizational Trust-Based Security Model")
+    print("  IOTBSM — Inter-Organizational Trust-Based Security Model")
     print("  Proof of Concept: Classified Threat Intelligence Sharing")
     print("="*60)
     print(f"  Parameters:")
@@ -73,7 +73,7 @@ def main():
     print(f"    Seed:    {args.seed}")
 
     # Run simulation
-    sim = IEOTBSMSimulation(
+    sim = IOTBSMSimulation(
         num_cycles=args.cycles,
         bs_regulatory_rate=args.beta,
         tpm_type=tpm_type,

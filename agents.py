@@ -1,6 +1,6 @@
 """
 agents.py
-IEOTBSM Agent and Organization Classes
+IOTBSM Agent and Organization Classes
 
 Implements:
   - AnalystAgent: rule-based, produces/consumes intelligence facts
@@ -274,7 +274,7 @@ class Organization:
         Ranks all agents by reliability, promotes top bs_fraction to BS role.
         Demotes existing BSs not in top ranked.
         
-        In the IEOTBSM, reliability is based on trustworthiness (in-degree
+        In the IOTBSM, reliability is based on trustworthiness (in-degree
         weighted trust from the trust graph). Here we use a simplified
         reliability metric updated each cycle.
         """

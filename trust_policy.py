@@ -1,8 +1,8 @@
 """
 trust_policy.py
-IEOTBSM Trust Policy Models (TPM1, TPM2, TPM3)
+IOTBSM Trust Policy Models (TPM1, TPM2, TPM3)
 
-Implements Definitions 24-25 and Equations 9-13 from the IEOTBSM.
+Implements Definitions 24-25 and Equations 9-13 from the IOTBSM.
 Trust policy models regulate interaction trust relations after a security
 breach (unintended receiver) is detected.
 

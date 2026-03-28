@@ -1,6 +1,6 @@
 """
 trust_model.py
-IEOTBSM Core Trust Model
+IOTBSM Core Trust Model
 Implements the trust relation matrix, logistic growth calculus (Equations 5 & 6),
 and instantaneous inter-boundary-spanner trust (Equation 7).
 
@@ -126,7 +126,7 @@ def instantaneous_bs_trust(io_trust: TrustValue,
 @dataclass
 class TrustRelationStore:
     """
-    Manages all trust relations in the IEOTBSM:
+    Manages all trust relations in the IOTBSM:
       ITR1: agent_i  -> agent_j  (same org)
       ITR2: agent_i  -> bs_j     (same org)
       ITR3: bs_i     -> agent_j  (same org)

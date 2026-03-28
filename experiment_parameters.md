@@ -1,4 +1,4 @@
-# IEOTBSM POC Experiment Input Parameters
+# IOTBSM POC Experiment Input Parameters
 
 Use this experiment set to cover policy effect, sensitivity, and stability with a manageable run count.
 

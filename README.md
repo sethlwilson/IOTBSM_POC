@@ -1,10 +1,14 @@
-# IEOTBSM POC
+# IOTBSM POC
 
 Proof-of-concept simulation for **inter-organizational trust-based sharing** of classified threat intelligence, based on:
 
 - Hexmoor, H., Wilson, S., & Bhattaram, S. (2006), *A theoretical inter-organizational trust-based security model*, The Knowledge Engineering Review, 21(2), 127-161.
 
 The project models three agencies exchanging intelligence through boundary spanners, tracks trust evolution, applies trust policy models after breaches, and generates a dashboard image per run.
+
+## Sample dashboard
+
+![IOTBSM simulation dashboard: IA/SM, inter-organizational trust, breaches and TPM applications, LLM activity, and summary statistics](iotbsm_dashboard.png)
 
 ## What This POC Simulates
 
@@ -57,7 +61,7 @@ python3 main.py \
   --beta 5 \
   --delta 0.10 \
   --alpha 0.60 \
-  --output ./out/ieotbsm_dashboard.png
+  --output ./out/iotbsm_dashboard.png
 ```
 
 ## CLI Parameters
@@ -71,7 +75,7 @@ python3 main.py \
 - `--beta` (int, default `5`): BS regulatory process rate.
 - `--delta` (float, default `0.1`): trust decrement factor used by TPM.
 - `--alpha` (float, default `0.6`): inter-org trust weighting factor.
-- `--output` (path, default `./ieotbsm_dashboard.png`): dashboard image path.
+- `--output` (path, default `./iotbsm_dashboard.png`): dashboard image path.
 
 ## Outputs
 

@@ -1,8 +1,8 @@
 """
 fact_pedigree.py
-IEOTBSM Fact Pedigree & Intelligence Fact Management
+IOTBSM Fact Pedigree & Intelligence Fact Management
 
-Implements Definitions 6, 17-23 from the IEOTBSM:
+Implements Definitions 6, 17-23 from the IOTBSM:
   - Intelligence facts (threat intel reports)
   - Fact pedigree (signature chain / provenance)
   - Intended vs. unintended receiver classification
@@ -46,7 +46,7 @@ class ClassificationLevel(Enum):
 @dataclass
 class IntelFact:
     """
-    Represents a piece of threat intelligence — the 'fact' in IEOTBSM.
+    Represents a piece of threat intelligence — the 'fact' in IOTBSM.
     
     Each fact has:
       - A unique identifier (cycle + initiator, per Definition 18)

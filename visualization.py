@@ -1,6 +1,6 @@
 """
 visualization.py
-IEOTBSM Simulation Visualization
+IOTBSM Simulation Visualization
 
 Generates publication-quality plots of:
   1. IA (Information Availability) and SM (Security Measure) over cycles
@@ -60,9 +60,9 @@ plt.rcParams.update({
 # ---------------------------------------------------------------------------
 def generate_dashboard(metrics: List[CycleMetrics],
                        io_trust_history: Dict[str, List[float]],
-                       output_path: str = "ieotbsm_dashboard.png"):
+                       output_path: str = "iotbsm_dashboard.png"):
     """
-    Generate the full IEOTBSM simulation dashboard.
+    Generate the full IOTBSM simulation dashboard.
     
     Layout:
       Row 1: IA/SM over time (main metric) | Inter-org trust evolution
@@ -71,7 +71,7 @@ def generate_dashboard(metrics: List[CycleMetrics],
     """
     fig = plt.figure(figsize=(18, 14), facecolor=COLORS["bg"])
     fig.suptitle(
-        "IEOTBSM — Classified Threat Intelligence Sharing Simulation\n"
+        "IOTBSM — Classified Threat Intelligence Sharing Simulation\n"
         "Inter-Organizational Trust-Based Security Model (Hexmoor, Wilson & Bhattaram, 2006)",
         fontsize=13, color=COLORS["text"], fontweight="bold", y=0.98
     )
@@ -106,7 +106,7 @@ def generate_dashboard(metrics: List[CycleMetrics],
 # Plot 1: Information Availability & Security Measure
 # ---------------------------------------------------------------------------
 def _plot_ia_sm(ax, cycles, metrics: List[CycleMetrics]):
-    """Primary IEOTBSM metrics: %IA and %SM over cycles."""
+    """Primary IOTBSM metrics: %IA and %SM over cycles."""
     pct_ia = [m.pct_ia for m in metrics]
     pct_sm = [m.pct_sm for m in metrics]
 
@@ -345,6 +345,6 @@ def _plot_summary_table(ax, metrics: List[CycleMetrics],
         ax.add_line(line)
 
     ax.set_title(
-        "Simulation Summary — IEOTBSM POC | "
+        "Simulation Summary — IOTBSM POC | "
         "Based on Hexmoor, Wilson & Bhattaram (2006) KER 21(2):127-161",
         color=COLORS["neutral"], fontsize=8, pad=6)

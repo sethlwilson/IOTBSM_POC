@@ -1,6 +1,6 @@
 """
 simulation.py
-IEOTBSM Main Simulation Engine
+IOTBSM Main Simulation Engine
 
 Implements the Modified Trust-based Information Sharing Algorithm (Figure 5)
 for the inter-organizational context with classified threat intelligence.
@@ -23,7 +23,7 @@ from trust_model import TrustRelationStore, InterOrgTrustTracker
 from trust_policy import TrustPolicyEngine, TPMType
 
 logging.basicConfig(level=logging.WARNING)
-logger = logging.getLogger("IEOTBSM")
+logger = logging.getLogger("IOTBSM")
 
 
 # ---------------------------------------------------------------------------
@@ -61,11 +61,11 @@ class CycleMetrics:
 
 
 # ---------------------------------------------------------------------------
-# IEOTBSM Simulation
+# IOTBSM Simulation
 # ---------------------------------------------------------------------------
-class IEOTBSMSimulation:
+class IOTBSMSimulation:
     """
-    Full IEOTBSM simulation implementing the algorithm in Figure 5.
+    Full IOTBSM simulation implementing the algorithm in Figure 5.
     
     Supports three agencies (organizations) with hybrid LLM+rule-based
     boundary spanners sharing classified threat intelligence.
@@ -181,7 +181,7 @@ class IEOTBSMSimulation:
     def run(self) -> List[CycleMetrics]:
         """Execute the full simulation."""
         print(f"\n{'='*60}")
-        print("  IEOTBSM SIMULATION — Classified Threat Intel Sharing")
+        print("  IOTBSM SIMULATION — Classified Threat Intel Sharing")
         print(f"  Agencies: {[o.org_id for o in self.organizations]}")
         print(f"  Cycles: {self.num_cycles} | β={self.bs_regulatory_rate} | "
               f"TPM: {self.tpm_engine.tpm_type.value}")

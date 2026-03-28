@@ -1,6 +1,6 @@
 """
 llm_interface.py
-IEOTBSM LLM Interface — Mocked Semantic Intelligence Assessor
+IOTBSM LLM Interface — Mocked Semantic Intelligence Assessor
 
 In the hybrid architecture, boundary spanners use an LLM to semantically
 assess incoming intelligence facts for relevance to their agency's current
